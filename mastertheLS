@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+ls -p -A -t --group-directories-first | awk '{printf "%s,", $0}' | awk '{sub(/,$/, ""); print}'
+
